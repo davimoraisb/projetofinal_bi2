@@ -1,0 +1,28 @@
+model Model
+	culture: pt-BR
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: pt-BR
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["fato_terremotos","dim_localizacao","dim_classificacao","dim_status_revisao","dim_calendario","medidas"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table fato_terremotos
+ref table DateTableTemplate_97308171-ec34-4d97-8824-e47b933e7e7a
+ref table dim_localizacao
+ref table dim_classificacao
+ref table dim_status_revisao
+ref table dim_calendario
+ref table LocalDateTable_36e26c1e-eb98-4955-ae99-57827a8cd951
+ref table medidas
+
+ref role analista_comercial_norte
+ref role defesa_civil_alerta
+
+ref cultureInfo pt-BR
+

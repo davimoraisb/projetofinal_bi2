@@ -1,0 +1,21 @@
+relationship AutoDetected_b87e60d9-2870-4624-a4b3-8a3c55da6e5b
+	fromColumn: fato_terremotos.id_status
+	toColumn: dim_status_revisao.id_status
+
+relationship AutoDetected_3d85b2fc-5b89-42c0-8763-1a376be3be52
+	fromColumn: fato_terremotos.id_mag
+	toColumn: dim_classificacao.id_mag
+
+relationship AutoDetected_ada14315-af57-4821-b164-68889fa96130
+	fromColumn: fato_terremotos.id_loc
+	toColumn: dim_localizacao.id_loc
+
+relationship AutoDetected_8a6b787e-ceae-4ef7-9313-c0fc2bf6b2f6
+	fromColumn: fato_terremotos.id_calendario
+	toColumn: dim_calendario.id_calendario
+
+relationship 2ef00367-3d87-4c0c-9a44-3fa514caecae
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_calendario.date
+	toColumn: LocalDateTable_36e26c1e-eb98-4955-ae99-57827a8cd951.Date
+

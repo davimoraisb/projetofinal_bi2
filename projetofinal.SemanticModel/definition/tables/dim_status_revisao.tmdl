@@ -1,0 +1,39 @@
+table dim_status_revisao
+	lineageTag: adab3bb1-60ce-4d7d-9ba2-991ab5c07dba
+
+	column review_status
+		dataType: string
+		lineageTag: c2d46d03-4e09-4a9b-b65d-3c087ed7f0ef
+		summarizeBy: none
+		sourceColumn: review_status
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_status
+		dataType: int64
+		formatString: 0
+		lineageTag: 2893cdd9-1377-4247-8576-d9b4790d19dd
+		summarizeBy: none
+		sourceColumn: id_status
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_status_revisao = m
+		mode: import
+		source =
+				let
+				    Fonte = Csv.Document(File.Contents("C:\Users\Davi Morais\Documents\CEUB\DDCDD\archive\earthquakes.csv"),[Delimiter=",", Columns=12, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"usgs_id", type text}, {"date", type text}, {"year", Int64.Type}, {"month", Int64.Type}, {"lat", Int64.Type}, {"lon", Int64.Type}, {"depth_km", Int64.Type}, {"magnitude", Int64.Type}, {"mag_type", type text}, {"magnitude_class", type text}, {"location_desc", type text}, {"review_status", type text}}),
+				    #"Outras Colunas Removidas" = Table.SelectColumns(#"Tipo Alterado",{"review_status"}),
+				    #"Duplicatas Removidas" = Table.Distinct(#"Outras Colunas Removidas", {"review_status"}),
+				    #"Índice Adicionado" = Table.AddIndexColumn(#"Duplicatas Removidas", "Índice", 1, 1, Int64.Type),
+				    #"Colunas Renomeadas" = Table.RenameColumns(#"Índice Adicionado",{{"Índice", "id_status"}}),
+				    #"Linhas Filtradas" = Table.SelectRows(#"Colunas Renomeadas", each true)
+				in
+				    #"Linhas Filtradas"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

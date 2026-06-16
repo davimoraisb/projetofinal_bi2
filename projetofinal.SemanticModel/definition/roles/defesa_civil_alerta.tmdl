@@ -1,0 +1,7 @@
+role defesa_civil_alerta
+	modelPermission: read
+
+	tablePermission dim_classificacao = [magnitude_class] IN {"strong", "major", "great"}
+
+	annotation PBI_Id = d488d84eef4f415fba90d4ab88130639
+

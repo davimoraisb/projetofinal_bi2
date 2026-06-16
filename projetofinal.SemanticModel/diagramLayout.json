@@ -1,0 +1,100 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 162.05263157894728,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 0,
+            "y": 75.5
+          },
+          "nodeIndex": "dim_calendario",
+          "nodeLineageTag": "67f5ade0-0aa3-4f5d-b5fd-3fe9f34bb317",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 26,
+            "y": 480.5
+          },
+          "nodeIndex": "dim_classificacao",
+          "nodeLineageTag": "dab4fe46-4c21-4633-aac6-8b3acdf79532",
+          "size": {
+            "height": 159,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 873,
+            "y": 40.5
+          },
+          "nodeIndex": "dim_localizacao",
+          "nodeLineageTag": "dc040f95-6c6c-4e6b-ae04-8c1a8edaafd2",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 872,
+            "y": 511.5
+          },
+          "nodeIndex": "dim_status_revisao",
+          "nodeLineageTag": "adab3bb1-60ce-4d7d-9ba2-991ab5c07dba",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 473,
+            "y": 151.5
+          },
+          "nodeIndex": "fato_terremotos",
+          "nodeLineageTag": "00711aa1-423c-4bbe-aba2-3319ee74f6f1",
+          "size": {
+            "height": 399,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1157,
+            "y": 261
+          },
+          "nodeIndex": "medidas",
+          "nodeLineageTag": "e3299f1c-3a0c-46f3-8db7-71455fcb6421",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "Todas as tabelas",
+      "zoomValue": 76,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas as tabelas",
+  "defaultDiagram": "Todas as tabelas"
+}

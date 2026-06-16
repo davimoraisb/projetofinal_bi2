@@ -1,0 +1,8 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "f4ce242d895a80bce25e",
+  "displayName": "Detalhamento e Drill-Down",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280
+}

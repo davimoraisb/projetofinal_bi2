@@ -1,0 +1,102 @@
+table medidas
+	lineageTag: e3299f1c-3a0c-46f3-8db7-71455fcb6421
+
+	measure qtd_total_terremotos = COUNT(fato_terremotos[usgs_id])
+		formatString: 0
+		lineageTag: 576d7539-d705-4212-a073-809bd849a4fe
+
+	measure magnitude_media = AVERAGE(fato_terremotos[magnitude])
+		formatString: 0.00
+		lineageTag: 248bd7dd-5539-4107-8067-44a4ee06349d
+
+	measure profundidade_media = AVERAGE(fato_terremotos[depth_km])
+		formatString: 0.00
+		lineageTag: cc1bf144-f3af-400b-9eab-5f1b84cc4c27
+
+	measure magnitude_maxima = MAX(fato_terremotos[magnitude])
+		formatString: 0.00
+		lineageTag: c2c77ff3-08fb-4b9e-ba4f-d3561525294b
+
+	measure profundidade_maxima = MAX(fato_terremotos[depth_km])
+		formatString: 0.00
+		lineageTag: 5c2ffc87-ac24-4aeb-9178-1f3f8c3e93ff
+
+	measure qtd_locais_unicos = DISTINCTCOUNT(dim_localizacao[location_desc])
+		formatString: 0
+		lineageTag: 196c1932-68bd-4c29-aff4-7cec43d2d9a7
+
+	measure qtd_terremotos_ano = TOTALYTD([qtd_total_terremotos], dim_calendario[date])
+		formatString: 0
+		lineageTag: db70fbbd-5aaa-4f11-b040-2fb815fba687
+
+	measure qtd_terremotos_mes = TOTALMTD([qtd_total_terremotos], dim_calendario[date])
+		formatString: 0
+		lineageTag: c5dae5eb-5acf-4f38-b75d-473431283f60
+
+	measure qtd_terremotos_ano_anterior = CALCULATE([qtd_total_terremotos], SAMEPERIODLASTYEAR(dim_calendario[date]))
+		formatString: 0
+		lineageTag: 37deaa1d-798d-40b7-9db2-d4048eb5a79b
+
+	measure crescimento_yoy_terremotos =
+			// Calcula a variação percentual ano a ano da quantidade de terremotos
+			VAR _atual = [qtd_total_terremotos]
+			VAR _anterior = [qtd_terremotos_ano_anterior]
+			RETURN
+				IF(
+					NOT ISBLANK(_anterior),
+					DIVIDE(_atual - _anterior, _anterior)
+				)
+		formatString: 0.00%
+		lineageTag: a660de05-44b1-4184-8106-d3c33971aa7b
+
+	measure qtd_terremotos_revisados =
+			// Filtra apenas terremotos com status revisado ("reviewed")
+			CALCULATE(
+				[qtd_total_terremotos],
+				dim_status_revisao[review_status] = "reviewed"
+			)
+		formatString: 0
+		lineageTag: 1814ba93-6910-41f1-9c33-5c78f2b7a3f9
+
+	measure percentual_terremotos_revisados =
+			// Calcula a proporção de terremotos revisados sobre o total geral
+			DIVIDE(
+				[qtd_terremotos_revisados],
+				CALCULATE([qtd_total_terremotos], ALL(dim_status_revisao))
+			)
+		formatString: 0.00%
+		lineageTag: cb6ac0eb-73dc-43a2-8016-0e6c15114ee8
+
+	measure magnitude_media_global =
+			// Calcula a média de magnitude de todos os terremotos do dataset, ignorando filtros locais
+			CALCULATE(
+				[magnitude_media],
+				ALL(fato_terremotos)
+			)
+		formatString: 0.00
+		lineageTag: bd8c06ce-86e4-4257-817c-e1d2ee1228eb
+
+	measure qtd_terremotos_acumulado_geral =
+			// Calcula a quantidade acumulada de terremotos ao longo do tempo (Running Total)
+			CALCULATE(
+				[qtd_total_terremotos],
+				FILTER(
+					ALL(dim_calendario),
+					dim_calendario[date] <= MAX(dim_calendario[date])
+				)
+			)
+		formatString: 0
+		lineageTag: 204a81f4-86f0-426c-8c9a-dfdf39817616
+
+	partition medidas = m
+		mode: import
+		source =
+				let
+				    Fonte = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [#"Coluna 1" = _t]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(Fonte,{{"Coluna 1", type text}}),
+				    #"Colunas Removidas" = Table.RemoveColumns(#"Tipo Alterado",{"Coluna 1"})
+				in
+				    #"Colunas Removidas"
+
+	annotation PBI_ResultType = Table
+

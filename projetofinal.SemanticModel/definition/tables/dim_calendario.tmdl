@@ -1,0 +1,65 @@
+table dim_calendario
+	lineageTag: 67f5ade0-0aa3-4f5d-b5fd-3fe9f34bb317
+
+	column date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 453884f6-2681-41b4-a701-840646145266
+		summarizeBy: none
+		sourceColumn: date
+
+		variation Variation
+			isDefault
+			relationship: 2ef00367-3d87-4c0c-9a44-3fa514caecae
+			defaultHierarchy: LocalDateTable_36e26c1e-eb98-4955-ae99-57827a8cd951.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column year
+		dataType: int64
+		formatString: 0
+		lineageTag: ea26cd66-0098-4a3c-84cd-146782c7c242
+		summarizeBy: sum
+		sourceColumn: year
+
+		annotation SummarizationSetBy = Automatic
+
+	column month
+		dataType: int64
+		formatString: 0
+		lineageTag: 329f0263-a1c0-4954-8e7d-6608b5b1e2e1
+		summarizeBy: sum
+		sourceColumn: month
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_calendario
+		dataType: int64
+		formatString: 0
+		lineageTag: 6ab678fe-2227-4f0e-8767-cdd666eb09e9
+		summarizeBy: none
+		sourceColumn: id_calendario
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_calendario = m
+		mode: import
+		source =
+				let
+				    Fonte = Csv.Document(File.Contents("C:\Users\Davi Morais\Documents\CEUB\DDCDD\archive\earthquakes.csv"),[Delimiter=",", Columns=12, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"usgs_id", type text}, {"date", type text}, {"year", Int64.Type}, {"month", Int64.Type}, {"lat", Int64.Type}, {"lon", Int64.Type}, {"depth_km", Int64.Type}, {"magnitude", Int64.Type}, {"mag_type", type text}, {"magnitude_class", type text}, {"location_desc", type text}, {"review_status", type text}}),
+				    #"Colunas Removidas" = Table.RemoveColumns(#"Tipo Alterado",{"usgs_id", "lat", "lon", "depth_km", "magnitude", "mag_type", "magnitude_class", "location_desc", "review_status"}),
+				    #"Duplicatas Removidas" = Table.Distinct(#"Colunas Removidas", {"date"}),
+				    #"Índice Adicionado" = Table.AddIndexColumn(#"Duplicatas Removidas", "Índice", 1, 4, Int64.Type),
+				    #"Colunas Renomeadas" = Table.RenameColumns(#"Índice Adicionado",{{"Índice", "id_calendario"}}),
+				    #"Tipo Alterado1" = Table.TransformColumnTypes(#"Colunas Renomeadas",{{"date", type date}})
+				in
+				    #"Tipo Alterado1"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

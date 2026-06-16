@@ -1,0 +1,64 @@
+table dim_localizacao
+	lineageTag: dc040f95-6c6c-4e6b-ae04-8c1a8edaafd2
+
+	column lat
+		dataType: double
+		formatString: 0
+		lineageTag: e203c683-6ff0-4335-b6a5-e5460b2a7772
+		summarizeBy: none
+		sourceColumn: lat
+
+		annotation SummarizationSetBy = Automatic
+
+	column lon
+		dataType: double
+		formatString: 0
+		lineageTag: d68d694d-f57b-4a67-9c2b-a051fcb7d984
+		summarizeBy: none
+		sourceColumn: lon
+
+		annotation SummarizationSetBy = Automatic
+
+	column location_desc
+		dataType: string
+		lineageTag: 3f5f259c-b92c-4770-903a-d10d67c9b25b
+		summarizeBy: none
+		sourceColumn: location_desc
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_loc
+		dataType: int64
+		formatString: 0
+		lineageTag: 7d08c11f-e805-4b25-8fa2-ded9e8ca25cd
+		summarizeBy: none
+		sourceColumn: id_loc
+
+		annotation SummarizationSetBy = Automatic
+
+	column hemisferio = IF(dim_localizacao[lat] < 0, "Sul", "Norte")
+		lineageTag: 796177c1-11d5-4e57-bd47-fda335513139
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_localizacao = m
+		mode: import
+		source =
+				let
+				    Fonte = Csv.Document(File.Contents("C:\Users\Davi Morais\Documents\CEUB\DDCDD\archive\earthquakes.csv"),[Delimiter=",", Columns=12, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"usgs_id", type text}, {"date", type text}, {"year", Int64.Type}, {"month", Int64.Type}, {"lat", Int64.Type}, {"lon", Int64.Type}, {"depth_km", Int64.Type}, {"magnitude", Int64.Type}, {"mag_type", type text}, {"magnitude_class", type text}, {"location_desc", type text}, {"review_status", type text}}),
+				    #"Colunas Removidas" = Table.RemoveColumns(#"Tipo Alterado",{"usgs_id", "date", "year", "month", "depth_km", "review_status", "magnitude_class", "mag_type"}),
+				    #"Colunas Removidas1" = Table.RemoveColumns(#"Colunas Removidas",{"magnitude"}),
+				    #"Duplicatas Removidas" = Table.Distinct(#"Colunas Removidas1", {"location_desc", "lon", "lat"}),
+				    #"Índice Adicionado" = Table.AddIndexColumn(#"Duplicatas Removidas", "Índice", 1, 1, Int64.Type),
+				    #"Colunas Renomeadas" = Table.RenameColumns(#"Índice Adicionado",{{"Índice", "id_loc"}}),
+				    #"Tipo Alterado1" = Table.TransformColumnTypes(#"Colunas Renomeadas",{{"lat", type number}, {"lon", type number}})
+				in
+				    #"Tipo Alterado1"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

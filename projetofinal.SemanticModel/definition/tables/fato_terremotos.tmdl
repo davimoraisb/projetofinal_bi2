@@ -1,0 +1,90 @@
+table fato_terremotos
+	lineageTag: 00711aa1-423c-4bbe-aba2-3319ee74f6f1
+
+	column usgs_id
+		dataType: string
+		lineageTag: 2cab149f-9848-4ffa-97e6-7ac08b10b556
+		summarizeBy: none
+		sourceColumn: usgs_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column depth_km
+		dataType: int64
+		formatString: 0
+		lineageTag: 94f33e7e-9b71-486a-8c85-84df1418b8e2
+		summarizeBy: sum
+		sourceColumn: depth_km
+
+		annotation SummarizationSetBy = Automatic
+
+	column magnitude
+		dataType: double
+		formatString: 0
+		lineageTag: c8259e5e-70aa-4746-aba3-59f09931bed4
+		summarizeBy: sum
+		sourceColumn: magnitude
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_status
+		dataType: int64
+		formatString: 0
+		lineageTag: 6cc20e4b-eaa0-42e6-91ef-6c46dcce30e4
+		summarizeBy: none
+		sourceColumn: id_status
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_mag
+		dataType: int64
+		formatString: 0
+		lineageTag: 2a10ded1-45c2-4457-842a-5edb24f110bd
+		summarizeBy: none
+		sourceColumn: id_mag
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_loc
+		dataType: int64
+		formatString: 0
+		lineageTag: abd3ee32-647a-4175-b2ff-2ca5391a4dc7
+		summarizeBy: none
+		sourceColumn: id_loc
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_calendario
+		dataType: int64
+		formatString: 0
+		lineageTag: 010c0361-5ae4-4291-9dee-bdcd8114640e
+		summarizeBy: none
+		sourceColumn: id_calendario
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fato_terremotos = m
+		mode: import
+		source =
+				let
+				    Fonte = Csv.Document(File.Contents("C:\Users\Davi Morais\Documents\CEUB\DDCDD\archive\earthquakes.csv"),[Delimiter=",", Columns=12, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"usgs_id", type text}, {"date", type text}, {"year", Int64.Type}, {"month", Int64.Type}, {"lat", Int64.Type}, {"lon", Int64.Type}, {"depth_km", Int64.Type}, {"magnitude", Int64.Type}, {"mag_type", type text}, {"magnitude_class", type text}, {"location_desc", type text}, {"review_status", type text}}),
+				    #"Tipo Alterado2" = Table.TransformColumnTypes(#"Tipo Alterado",{{"lat", type number}, {"lon", type number}, {"date", type date}}),
+				    #"Consultas Mescladas" = Table.NestedJoin(#"Tipo Alterado2", {"review_status"}, dim_status_revisao, {"review_status"}, "dim_status_revisao", JoinKind.LeftOuter),
+				    #"dim_status_revisao Expandido" = Table.ExpandTableColumn(#"Consultas Mescladas", "dim_status_revisao", {"id_status"}, {"id_status"}),
+				    #"Consultas Mescladas1" = Table.NestedJoin(#"dim_status_revisao Expandido", {"mag_type", "magnitude_class"}, dim_classificacao, {"mag_type", "magnitude_class"}, "dim_classificacao", JoinKind.LeftOuter),
+				    #"dim_classificacao Expandido" = Table.ExpandTableColumn(#"Consultas Mescladas1", "dim_classificacao", {"id_mag"}, {"id_mag"}),
+				    #"Consultas Mescladas2" = Table.NestedJoin(#"dim_classificacao Expandido", {"lat", "lon", "location_desc"}, dim_localizacao, {"lat", "lon", "location_desc"}, "dim_localizacao", JoinKind.LeftOuter),
+				    #"dim_localizacao Expandido" = Table.ExpandTableColumn(#"Consultas Mescladas2", "dim_localizacao", {"id_loc"}, {"id_loc"}),
+				    #"Consultas Mescladas3" = Table.NestedJoin(#"dim_localizacao Expandido", {"date"}, dim_calendario, {"date"}, "dim_calendario", JoinKind.LeftOuter),
+				    #"dim_calendario Expandido" = Table.ExpandTableColumn(#"Consultas Mescladas3", "dim_calendario", {"id_calendario"}, {"id_calendario"}),
+				    #"Colunas Removidas" = Table.RemoveColumns(#"dim_calendario Expandido",{"date", "year", "month", "lat", "lon", "mag_type", "magnitude_class", "location_desc", "review_status"}),
+				    #"Tipo Alterado1" = Table.TransformColumnTypes(#"Colunas Removidas",{{"magnitude", type number}})
+				in
+				    #"Tipo Alterado1"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+
