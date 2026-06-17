@@ -2,8 +2,4508 @@ cultureInfo pt-BR
 
 	linguisticMetadata =
 			{
+			  "Version": "4.1.0",
 			  "Language": "en-US",
-			  "Version": "1.0.0"
+			  "Entities": {
+			    "fato_terremoto": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_terremotos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fato terremoto": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fato_terremotos": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "fato_terremoto.usgs_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_terremotos",
+			          "ConceptualProperty": "usgs_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "usgs id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "usg id": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "usgs_id": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "usg identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "usg identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "usg identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "usg credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "fato_terremoto.depth_km": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_terremotos",
+			          "ConceptualProperty": "depth_km"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "depth km": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "depth_km": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "km": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "fato_terremoto.magnitude": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_terremotos",
+			          "ConceptualProperty": "magnitude"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "magnitude": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "greatness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "extent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "degree": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "enormousness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "enormity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "scale": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "size": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "level": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "importance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "significance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        }
+			      ]
+			    },
+			    "fato_terremoto.id_status": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_terremotos",
+			          "ConceptualProperty": "id_status"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "id status": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "id_status": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "status": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "id category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "id importance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "id prestige": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "id prominence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "importance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "prestige": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "prominence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "id condition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "id class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "fato_terremoto.id_mag": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_terremotos",
+			          "ConceptualProperty": "id_mag"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "id mag": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "id_mag": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "mag": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "identification mag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity mag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier mag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential mag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "id publication": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "id journal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "publication": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "journal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "id periodical": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "id weekly": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "fato_terremoto.id_loc": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_terremotos",
+			          "ConceptualProperty": "id_loc"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "id loc": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "id_loc": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification loc": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity loc": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier loc": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential loc": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "fato_terremoto.id_calendario": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "fato_terremotos",
+			          "ConceptualProperty": "id_calendario"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "id calendario": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "id_calendario": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification calendario": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity calendario": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier calendario": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential calendario": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "dim_localizacao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_localizacao"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dim localizacao": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dim_localizacao": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "dim_localizacao.lat": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_localizacao",
+			          "ConceptualProperty": "lat"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "lat": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_localizacao.lon": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_localizacao",
+			          "ConceptualProperty": "lon"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "lon": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_localizacao.location_desc": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_localizacao",
+			          "ConceptualProperty": "location_desc"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "location desc": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "location_desc": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "location description": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "locality desc": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "placement desc": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "scene desc": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "venue desc": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "address desc": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "place desc": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "position desc": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "setting desc": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "site desc": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "dim_localizacao.id_loc": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_localizacao",
+			          "ConceptualProperty": "id_loc"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id loc": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "id_loc": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification loc": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity loc": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier loc": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential loc": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "dim_localizacao.hemisferio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_localizacao",
+			          "ConceptualProperty": "hemisferio"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "hemisferio": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dim_classificacao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_classificacao"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dim classificacao": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dim_classificacao": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "dim_classificacao.mag_type": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_classificacao",
+			          "ConceptualProperty": "mag_type"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mag type": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "mag_type": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "type": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "mag category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "mag genre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "mag manner": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "mag variety": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "genre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "manner": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "variety": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "mag brand": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "mag class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "dim_classificacao.magnitude_class": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_classificacao",
+			          "ConceptualProperty": "magnitude_class"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "magnitude class": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "magnitude_class": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "class": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "magnitude classification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "magnitude category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "magnitude genre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "classification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "genre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "magnitude course": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "magnitude grade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "magnitude lecture": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "magnitude lesson": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "dim_classificacao.id_mag": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_classificacao",
+			          "ConceptualProperty": "id_mag"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id mag": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "id_mag": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "mag": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "identification mag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity mag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier mag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential mag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "id publication": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "id journal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "publication": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "journal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "id periodical": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "id weekly": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "dim_status_revisao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_status_revisao"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dim status revisao": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dim_status_revisao": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "dim category revisao": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "dim importance revisao": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "dim prestige revisao": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "dim prominence revisao": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "dim condition revisao": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "dim class revisao": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "dim grade revisao": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "dim level revisao": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "dim position revisao": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "dim rank revisao": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "dim_status_revisao.review_status": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_status_revisao",
+			          "ConceptualProperty": "review_status"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "review status": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "review_status": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "status": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "review category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "review importance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "review prestige": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "review prominence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "importance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "prestige": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "prominence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "review condition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "review class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "quantidade de terremotos por ano": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dim_status_revisao.id_status": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_status_revisao",
+			          "ConceptualProperty": "id_status"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id status": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "id_status": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "status": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "id category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "id importance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "id prestige": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "id prominence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "importance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "prestige": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "prominence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "id condition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "id class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "dim_calendario": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_calendario"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dim calendario": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dim_calendario": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "dim_calendario.date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_calendario",
+			          "ConceptualProperty": "date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "dim_calendario.date.hierarquia_de_data": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_calendario",
+			          "VariationSource": "date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "hierarquia de data": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hierarquia de information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "dim_calendario.date.ano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_calendario",
+			          "VariationSource": "date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Ano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "dim_calendario.date.trimestre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_calendario",
+			          "VariationSource": "date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Trimestre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "dim_calendario.date.mê": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_calendario",
+			          "VariationSource": "date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Mês"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "dim_calendario.date.dia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_calendario",
+			          "VariationSource": "date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Dia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "dim_calendario.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_calendario",
+			          "ConceptualProperty": "year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "dim_calendario.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_calendario",
+			          "ConceptualProperty": "month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ]
+			    },
+			    "dim_calendario.id_calendario": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "dim_calendario",
+			          "ConceptualProperty": "id_calendario"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id calendario": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "id_calendario": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "identification calendario": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identity calendario": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "identifier calendario": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "credential calendario": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "medida": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "medidas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "medida": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.qtd_total_terremotos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "medidas",
+			          "ConceptualProperty": "qtd_total_terremotos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "qtd total terremotos": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "qtd_total_terremotos": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "qtd aggregate terremoto": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "qtd overall terremoto": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "medida.magnitude_media": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "medidas",
+			          "ConceptualProperty": "magnitude_media"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "magnitude media": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "magnitude_media": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "media": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "magnitude television": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "magnitude radio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "magnitude broadcasting": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "television": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "radio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "broadcasting": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "magnitude vehicle": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "magnitude mode": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "magnitude method": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "magnitude avenue": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        }
+			      ]
+			    },
+			    "medida.profundidade_media": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "medidas",
+			          "ConceptualProperty": "profundidade_media"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "profundidade media": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "profundidade_media": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "profundidade television": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "profundidade radio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "profundidade broadcasting": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "profundidade vehicle": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "profundidade mode": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "profundidade method": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "profundidade avenue": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "profundidade agent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "profundidade organ": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "profundidade mean": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        }
+			      ]
+			    },
+			    "medida.magnitude_maxima": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "medidas",
+			          "ConceptualProperty": "magnitude_maxima"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "magnitude maxima": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "magnitude_maxima": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "maxima": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "medida.profundidade_maxima": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "medidas",
+			          "ConceptualProperty": "profundidade_maxima"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "profundidade maxima": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "profundidade_maxima": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "medida.qtd_locais_unicos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "medidas",
+			          "ConceptualProperty": "qtd_locais_unicos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "qtd locais unicos": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "qtd_locais_unicos": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "medida.qtd_terremotos_ano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "medidas",
+			          "ConceptualProperty": "qtd_terremotos_ano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "qtd terremotos ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "qtd_terremotos_ano": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "medida.qtd_terremotos_mes": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "medidas",
+			          "ConceptualProperty": "qtd_terremotos_mes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "qtd terremotos mes": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "qtd_terremotos_mes": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "medida.qtd_terremotos_ano_anterior": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "medidas",
+			          "ConceptualProperty": "qtd_terremotos_ano_anterior"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "qtd terremotos ano anterior": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "qtd_terremotos_ano_anterior": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "medida.crescimento_yoy_terremotos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "medidas",
+			          "ConceptualProperty": "crescimento_yoy_terremotos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "crescimento yoy terremotos": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "crescimento_yoy_terremotos": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "medida.qtd_terremotos_revisados": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "medidas",
+			          "ConceptualProperty": "qtd_terremotos_revisados"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "qtd terremotos revisados": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "qtd_terremotos_revisados": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "medida.percentual_terremotos_revisados": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "medidas",
+			          "ConceptualProperty": "percentual_terremotos_revisados"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "percentual terremotos revisados": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "percentual_terremotos_revisados": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "medida.magnitude_media_global": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "medidas",
+			          "ConceptualProperty": "magnitude_media_global"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "magnitude media global": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "magnitude_media_global": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "magnitude television global": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "magnitude radio global": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "magnitude broadcasting global": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "magnitude vehicle global": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "magnitude mode global": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "magnitude method global": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "magnitude avenue global": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "magnitude agent global": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "magnitude organ global": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "magnitude mean global": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        }
+			      ]
+			    },
+			    "medida.qtd_terremotos_acumulado_geral": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "medidas",
+			          "ConceptualProperty": "qtd_terremotos_acumulado_geral"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "qtd terremotos acumulado geral": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "qtd_terremotos_acumulado_geral": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "dim_calendario_date_mê_has_dim_calendario_date_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_calendario.date.mê": {
+			          "Target": {
+			            "Entity": "dim_calendario.date.mê"
+			          }
+			        },
+			        "dim_calendario.date.dia": {
+			          "Target": {
+			            "Entity": "dim_calendario.date.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_calendario.date.mê"
+			            },
+			            "Object": {
+			              "Role": "dim_calendario.date.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_dias"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_calendario.date.dia"
+			            },
+			            "Object": {
+			              "Role": "dim_calendario.date.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_have_mê"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "dim_calendario.date.dia"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "dim_calendario.date.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_are_in_mê"
+			        }
+			      ]
+			    },
+			    "dim_calendario_date_trimestre_has_dim_calendario_date_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_calendario.date.trimestre": {
+			          "Target": {
+			            "Entity": "dim_calendario.date.trimestre"
+			          }
+			        },
+			        "dim_calendario.date.mê": {
+			          "Target": {
+			            "Entity": "dim_calendario.date.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_calendario.date.trimestre"
+			            },
+			            "Object": {
+			              "Role": "dim_calendario.date.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_mê"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_calendario.date.mê"
+			            },
+			            "Object": {
+			              "Role": "dim_calendario.date.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_trimestres"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "dim_calendario.date.mê"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "dim_calendario.date.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_are_in_trimestres"
+			        }
+			      ]
+			    },
+			    "dim_calendario_date_ano_has_dim_calendario_date_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_calendario.date.ano": {
+			          "Target": {
+			            "Entity": "dim_calendario.date.ano"
+			          }
+			        },
+			        "dim_calendario.date.trimestre": {
+			          "Target": {
+			            "Entity": "dim_calendario.date.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_calendario.date.ano"
+			            },
+			            "Object": {
+			              "Role": "dim_calendario.date.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "anos_have_trimestres"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_calendario.date.trimestre"
+			            },
+			            "Object": {
+			              "Role": "dim_calendario.date.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_anos"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "dim_calendario.date.trimestre"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "dim_calendario.date.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_are_in_anos"
+			        }
+			      ]
+			    },
+			    "dim_calendario_date_hierarquia_de_data_has_dim_calendario_date_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_calendario.date.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "dim_calendario.date.hierarquia_de_data"
+			          }
+			        },
+			        "dim_calendario.date.dia": {
+			          "Target": {
+			            "Entity": "dim_calendario.date.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_calendario.date.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "dim_calendario.date.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_dias"
+			        }
+			      ]
+			    },
+			    "dim_calendario_date_hierarquia_de_data_has_dim_calendario_date_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_calendario.date.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "dim_calendario.date.hierarquia_de_data"
+			          }
+			        },
+			        "dim_calendario.date.mê": {
+			          "Target": {
+			            "Entity": "dim_calendario.date.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_calendario.date.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "dim_calendario.date.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_mê"
+			        }
+			      ]
+			    },
+			    "dim_calendario_date_hierarquia_de_data_has_dim_calendario_date_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_calendario.date.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "dim_calendario.date.hierarquia_de_data"
+			          }
+			        },
+			        "dim_calendario.date.trimestre": {
+			          "Target": {
+			            "Entity": "dim_calendario.date.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_calendario.date.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "dim_calendario.date.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_trimestres"
+			        }
+			      ]
+			    },
+			    "dim_calendario_date_hierarquia_de_data_has_dim_calendario_date_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_calendario.date.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "dim_calendario.date.hierarquia_de_data"
+			          }
+			        },
+			        "dim_calendario.date.ano": {
+			          "Target": {
+			            "Entity": "dim_calendario.date.ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_calendario.date.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "dim_calendario.date.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_anos"
+			        }
+			      ]
+			    },
+			    "dim_calendario_date_has_hierarquia_de_data": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_calendario.date": {
+			          "Target": {
+			            "Entity": "dim_calendario.date"
+			          }
+			        },
+			        "dim_calendario.date.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "dim_calendario.date.hierarquia_de_data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_calendario.date"
+			            },
+			            "Object": {
+			              "Role": "dim_calendario.date.hierarquia_de_data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_hierarquia_de_data"
+			        }
+			      ]
+			    },
+			    "fato_terremoto_has_dim_calendario": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_terremotos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_terremoto": {
+			          "Target": {
+			            "Entity": "fato_terremoto"
+			          }
+			        },
+			        "dim_calendario": {
+			          "Target": {
+			            "Entity": "dim_calendario"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_terremoto"
+			            },
+			            "Object": {
+			              "Role": "dim_calendario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_terremotos_have_dim_calendarios"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_calendario"
+			            },
+			            "Object": {
+			              "Role": "fato_terremoto"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_calendarios_have_fato_terremotos"
+			        }
+			      ]
+			    },
+			    "fato_terremoto_has_dim_localizacao": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_terremotos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_terremoto": {
+			          "Target": {
+			            "Entity": "fato_terremoto"
+			          }
+			        },
+			        "dim_localizacao": {
+			          "Target": {
+			            "Entity": "dim_localizacao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_terremoto"
+			            },
+			            "Object": {
+			              "Role": "dim_localizacao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_terremotos_have_dim_localizacaos"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_localizacao"
+			            },
+			            "Object": {
+			              "Role": "fato_terremoto"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_localizacaos_have_fato_terremotos"
+			        }
+			      ]
+			    },
+			    "fato_terremoto_has_dim_classificacao": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_terremotos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_terremoto": {
+			          "Target": {
+			            "Entity": "fato_terremoto"
+			          }
+			        },
+			        "dim_classificacao": {
+			          "Target": {
+			            "Entity": "dim_classificacao"
+			          },
+			          "Nouns": [
+			            {
+			              "mag": {
+			                "State": "Generated"
+			              }
+			            }
+			          ]
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_terremoto"
+			            },
+			            "Object": {
+			              "Role": "dim_classificacao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_terremotos_have_dim_classificacaos"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_classificacao"
+			            },
+			            "Object": {
+			              "Role": "fato_terremoto"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_classificacaos_have_fato_terremotos"
+			        }
+			      ]
+			    },
+			    "fato_terremoto_has_dim_status_revisao": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_terremotos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_terremoto": {
+			          "Target": {
+			            "Entity": "fato_terremoto"
+			          }
+			        },
+			        "dim_status_revisao": {
+			          "Target": {
+			            "Entity": "dim_status_revisao"
+			          },
+			          "Nouns": [
+			            {
+			              "status": {
+			                "State": "Generated"
+			              }
+			            }
+			          ]
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_terremoto"
+			            },
+			            "Object": {
+			              "Role": "dim_status_revisao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_terremotos_have_dim_status_revisaos"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_status_revisao"
+			            },
+			            "Object": {
+			              "Role": "fato_terremoto"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_status_revisaos_have_fato_terremotos"
+			        }
+			      ]
+			    },
+			    "fato_terremoto_has_medida_qtd_terremotos_acumulado_geral": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_terremotos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_terremoto": {
+			          "Target": {
+			            "Entity": "fato_terremoto"
+			          }
+			        },
+			        "medida.qtd_terremotos_acumulado_geral": {
+			          "Target": {
+			            "Entity": "medida.qtd_terremotos_acumulado_geral"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_terremoto"
+			            },
+			            "Object": {
+			              "Role": "medida.qtd_terremotos_acumulado_geral"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_terremotos_have_qtd_terremotos_acumulado_geral"
+			        }
+			      ]
+			    },
+			    "fato_terremoto_has_medida_magnitude_media_global": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_terremotos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_terremoto": {
+			          "Target": {
+			            "Entity": "fato_terremoto"
+			          }
+			        },
+			        "medida.magnitude_media_global": {
+			          "Target": {
+			            "Entity": "medida.magnitude_media_global"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_terremoto"
+			            },
+			            "Object": {
+			              "Role": "medida.magnitude_media_global"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_terremotos_have_magnitude_media_global"
+			        }
+			      ]
+			    },
+			    "fato_terremoto_has_medida_percentual_terremotos_revisados": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_terremotos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_terremoto": {
+			          "Target": {
+			            "Entity": "fato_terremoto"
+			          }
+			        },
+			        "medida.percentual_terremotos_revisados": {
+			          "Target": {
+			            "Entity": "medida.percentual_terremotos_revisados"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_terremoto"
+			            },
+			            "Object": {
+			              "Role": "medida.percentual_terremotos_revisados"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_terremotos_have_percentual_terremotos_revisados"
+			        }
+			      ]
+			    },
+			    "fato_terremoto_has_medida_qtd_terremotos_revisados": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_terremotos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_terremoto": {
+			          "Target": {
+			            "Entity": "fato_terremoto"
+			          }
+			        },
+			        "medida.qtd_terremotos_revisados": {
+			          "Target": {
+			            "Entity": "medida.qtd_terremotos_revisados"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_terremoto"
+			            },
+			            "Object": {
+			              "Role": "medida.qtd_terremotos_revisados"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_terremotos_have_qtd_terremotos_revisados"
+			        }
+			      ]
+			    },
+			    "fato_terremoto_has_medida_crescimento_yoy_terremotos": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_terremotos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_terremoto": {
+			          "Target": {
+			            "Entity": "fato_terremoto"
+			          }
+			        },
+			        "medida.crescimento_yoy_terremotos": {
+			          "Target": {
+			            "Entity": "medida.crescimento_yoy_terremotos"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_terremoto"
+			            },
+			            "Object": {
+			              "Role": "medida.crescimento_yoy_terremotos"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_terremotos_have_crescimento_yoy_terremotos"
+			        }
+			      ]
+			    },
+			    "fato_terremoto_has_medida_qtd_terremotos_ano_anterior": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_terremotos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_terremoto": {
+			          "Target": {
+			            "Entity": "fato_terremoto"
+			          }
+			        },
+			        "medida.qtd_terremotos_ano_anterior": {
+			          "Target": {
+			            "Entity": "medida.qtd_terremotos_ano_anterior"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_terremoto"
+			            },
+			            "Object": {
+			              "Role": "medida.qtd_terremotos_ano_anterior"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_terremotos_have_qtd_terremotos_ano_anterior"
+			        }
+			      ]
+			    },
+			    "fato_terremoto_has_medida_qtd_terremotos_mes": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_terremotos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_terremoto": {
+			          "Target": {
+			            "Entity": "fato_terremoto"
+			          }
+			        },
+			        "medida.qtd_terremotos_mes": {
+			          "Target": {
+			            "Entity": "medida.qtd_terremotos_mes"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_terremoto"
+			            },
+			            "Object": {
+			              "Role": "medida.qtd_terremotos_mes"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_terremotos_have_qtd_terremotos_mes"
+			        }
+			      ]
+			    },
+			    "dim_calendario_has_medida_qtd_terremotos_mes": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_calendario": {
+			          "Target": {
+			            "Entity": "dim_calendario"
+			          }
+			        },
+			        "medida.qtd_terremotos_mes": {
+			          "Target": {
+			            "Entity": "medida.qtd_terremotos_mes"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_calendario"
+			            },
+			            "Object": {
+			              "Role": "medida.qtd_terremotos_mes"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_calendarios_have_qtd_terremotos_mes"
+			        }
+			      ]
+			    },
+			    "fato_terremoto_has_medida_qtd_terremotos_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_terremotos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_terremoto": {
+			          "Target": {
+			            "Entity": "fato_terremoto"
+			          }
+			        },
+			        "medida.qtd_terremotos_ano": {
+			          "Target": {
+			            "Entity": "medida.qtd_terremotos_ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_terremoto"
+			            },
+			            "Object": {
+			              "Role": "medida.qtd_terremotos_ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_terremotos_have_qtd_terremotos_ano"
+			        }
+			      ]
+			    },
+			    "dim_calendario_has_medida_qtd_terremotos_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_calendario": {
+			          "Target": {
+			            "Entity": "dim_calendario"
+			          }
+			        },
+			        "medida.qtd_terremotos_ano": {
+			          "Target": {
+			            "Entity": "medida.qtd_terremotos_ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_calendario"
+			            },
+			            "Object": {
+			              "Role": "medida.qtd_terremotos_ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_calendarios_have_qtd_terremotos_ano"
+			        }
+			      ]
+			    },
+			    "dim_localizacao_has_medida_qtd_locais_unicos": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_localizacao"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_localizacao": {
+			          "Target": {
+			            "Entity": "dim_localizacao"
+			          }
+			        },
+			        "medida.qtd_locais_unicos": {
+			          "Target": {
+			            "Entity": "medida.qtd_locais_unicos"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_localizacao"
+			            },
+			            "Object": {
+			              "Role": "medida.qtd_locais_unicos"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_localizacaos_have_qtd_locais_unicos"
+			        }
+			      ]
+			    },
+			    "fato_terremoto_has_medida_profundidade_maxima": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_terremotos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_terremoto": {
+			          "Target": {
+			            "Entity": "fato_terremoto"
+			          }
+			        },
+			        "medida.profundidade_maxima": {
+			          "Target": {
+			            "Entity": "medida.profundidade_maxima"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_terremoto"
+			            },
+			            "Object": {
+			              "Role": "medida.profundidade_maxima"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_terremotos_have_profundidade_maxima"
+			        }
+			      ]
+			    },
+			    "fato_terremoto_has_medida_magnitude_maxima": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_terremotos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_terremoto": {
+			          "Target": {
+			            "Entity": "fato_terremoto"
+			          }
+			        },
+			        "medida.magnitude_maxima": {
+			          "Target": {
+			            "Entity": "medida.magnitude_maxima"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_terremoto"
+			            },
+			            "Object": {
+			              "Role": "medida.magnitude_maxima"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_terremotos_have_magnitude_maxima"
+			        }
+			      ]
+			    },
+			    "fato_terremoto_has_medida_profundidade_media": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_terremotos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_terremoto": {
+			          "Target": {
+			            "Entity": "fato_terremoto"
+			          }
+			        },
+			        "medida.profundidade_media": {
+			          "Target": {
+			            "Entity": "medida.profundidade_media"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_terremoto"
+			            },
+			            "Object": {
+			              "Role": "medida.profundidade_media"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_terremotos_have_profundidade_media"
+			        }
+			      ]
+			    },
+			    "fato_terremoto_has_medida_magnitude_media": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_terremotos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_terremoto": {
+			          "Target": {
+			            "Entity": "fato_terremoto"
+			          }
+			        },
+			        "medida.magnitude_media": {
+			          "Target": {
+			            "Entity": "medida.magnitude_media"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_terremoto"
+			            },
+			            "Object": {
+			              "Role": "medida.magnitude_media"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_terremotos_have_magnitude_media"
+			        }
+			      ]
+			    },
+			    "fato_terremoto_has_medida_qtd_total_terremotos": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_terremotos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_terremoto": {
+			          "Target": {
+			            "Entity": "fato_terremoto"
+			          }
+			        },
+			        "medida.qtd_total_terremotos": {
+			          "Target": {
+			            "Entity": "medida.qtd_total_terremotos"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_terremoto"
+			            },
+			            "Object": {
+			              "Role": "medida.qtd_total_terremotos"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_terremotos_have_qtd_total_terremotos"
+			        }
+			      ]
+			    },
+			    "dim_calendario_has_id_calendario": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_calendario": {
+			          "Target": {
+			            "Entity": "dim_calendario"
+			          }
+			        },
+			        "dim_calendario.id_calendario": {
+			          "Target": {
+			            "Entity": "dim_calendario.id_calendario"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_calendario"
+			            },
+			            "Object": {
+			              "Role": "dim_calendario.id_calendario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_calendarios_have_id_calendarios"
+			        }
+			      ]
+			    },
+			    "dim_calendario_has_month": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_calendario": {
+			          "Target": {
+			            "Entity": "dim_calendario"
+			          }
+			        },
+			        "dim_calendario.month": {
+			          "Target": {
+			            "Entity": "dim_calendario.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_calendario"
+			            },
+			            "Object": {
+			              "Role": "dim_calendario.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_calendarios_have_months"
+			        }
+			      ]
+			    },
+			    "dim_calendario_has_year": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_calendario": {
+			          "Target": {
+			            "Entity": "dim_calendario"
+			          }
+			        },
+			        "dim_calendario.year": {
+			          "Target": {
+			            "Entity": "dim_calendario.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_calendario"
+			            },
+			            "Object": {
+			              "Role": "dim_calendario.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_calendarios_have_years"
+			        }
+			      ]
+			    },
+			    "dim_calendario_has_date": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_calendario": {
+			          "Target": {
+			            "Entity": "dim_calendario"
+			          }
+			        },
+			        "dim_calendario.date": {
+			          "Target": {
+			            "Entity": "dim_calendario.date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_calendario"
+			            },
+			            "Object": {
+			              "Role": "dim_calendario.date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_calendarios_have_dates"
+			        }
+			      ]
+			    },
+			    "dim_status_revisao_has_id_status": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_status_revisao"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_status_revisao": {
+			          "Target": {
+			            "Entity": "dim_status_revisao"
+			          }
+			        },
+			        "dim_status_revisao.id_status": {
+			          "Target": {
+			            "Entity": "dim_status_revisao.id_status"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_status_revisao"
+			            },
+			            "Object": {
+			              "Role": "dim_status_revisao.id_status"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_status_revisaos_have_id_statuses"
+			        }
+			      ]
+			    },
+			    "dim_status_revisao_has_review_status": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_status_revisao"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_status_revisao": {
+			          "Target": {
+			            "Entity": "dim_status_revisao"
+			          }
+			        },
+			        "dim_status_revisao.review_status": {
+			          "Target": {
+			            "Entity": "dim_status_revisao.review_status"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_status_revisao"
+			            },
+			            "Object": {
+			              "Role": "dim_status_revisao.review_status"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_status_revisaos_have_review_statuses"
+			        }
+			      ]
+			    },
+			    "dim_classificacao_has_id_mag": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_classificacao"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_classificacao": {
+			          "Target": {
+			            "Entity": "dim_classificacao"
+			          }
+			        },
+			        "dim_classificacao.id_mag": {
+			          "Target": {
+			            "Entity": "dim_classificacao.id_mag"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_classificacao"
+			            },
+			            "Object": {
+			              "Role": "dim_classificacao.id_mag"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_classificacaos_have_id_mags"
+			        }
+			      ]
+			    },
+			    "dim_classificacao_has_magnitude_class": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_classificacao"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_classificacao": {
+			          "Target": {
+			            "Entity": "dim_classificacao"
+			          }
+			        },
+			        "dim_classificacao.magnitude_class": {
+			          "Target": {
+			            "Entity": "dim_classificacao.magnitude_class"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_classificacao"
+			            },
+			            "Object": {
+			              "Role": "dim_classificacao.magnitude_class"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_classificacaos_have_magnitude_classes"
+			        }
+			      ]
+			    },
+			    "dim_classificacao_has_mag_type": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_classificacao"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_classificacao": {
+			          "Target": {
+			            "Entity": "dim_classificacao"
+			          }
+			        },
+			        "dim_classificacao.mag_type": {
+			          "Target": {
+			            "Entity": "dim_classificacao.mag_type"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_classificacao"
+			            },
+			            "Object": {
+			              "Role": "dim_classificacao.mag_type"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_classificacaos_have_mag_types"
+			        }
+			      ]
+			    },
+			    "dim_localizacao_has_hemisferio": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_localizacao"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_localizacao": {
+			          "Target": {
+			            "Entity": "dim_localizacao"
+			          }
+			        },
+			        "dim_localizacao.hemisferio": {
+			          "Target": {
+			            "Entity": "dim_localizacao.hemisferio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_localizacao"
+			            },
+			            "Object": {
+			              "Role": "dim_localizacao.hemisferio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_localizacaos_have_hemisferios"
+			        }
+			      ]
+			    },
+			    "dim_localizacao_has_id_loc": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_localizacao"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_localizacao": {
+			          "Target": {
+			            "Entity": "dim_localizacao"
+			          }
+			        },
+			        "dim_localizacao.id_loc": {
+			          "Target": {
+			            "Entity": "dim_localizacao.id_loc"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_localizacao"
+			            },
+			            "Object": {
+			              "Role": "dim_localizacao.id_loc"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_localizacaos_have_id_locs"
+			        }
+			      ]
+			    },
+			    "dim_localizacao_has_location_desc": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_localizacao"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_localizacao": {
+			          "Target": {
+			            "Entity": "dim_localizacao"
+			          }
+			        },
+			        "dim_localizacao.location_desc": {
+			          "Target": {
+			            "Entity": "dim_localizacao.location_desc"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_localizacao"
+			            },
+			            "Object": {
+			              "Role": "dim_localizacao.location_desc"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_localizacaos_have_location_descs"
+			        }
+			      ]
+			    },
+			    "dim_localizacao_has_lon": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_localizacao"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_localizacao": {
+			          "Target": {
+			            "Entity": "dim_localizacao"
+			          }
+			        },
+			        "dim_localizacao.lon": {
+			          "Target": {
+			            "Entity": "dim_localizacao.lon"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_localizacao"
+			            },
+			            "Object": {
+			              "Role": "dim_localizacao.lon"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_localizacaos_have_lon"
+			        }
+			      ]
+			    },
+			    "dim_localizacao_has_lat": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_localizacao"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_localizacao": {
+			          "Target": {
+			            "Entity": "dim_localizacao"
+			          }
+			        },
+			        "dim_localizacao.lat": {
+			          "Target": {
+			            "Entity": "dim_localizacao.lat"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_localizacao"
+			            },
+			            "Object": {
+			              "Role": "dim_localizacao.lat"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_localizacaos_have_lats"
+			        }
+			      ]
+			    },
+			    "fato_terremoto_has_magnitude": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_terremotos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_terremoto": {
+			          "Target": {
+			            "Entity": "fato_terremoto"
+			          }
+			        },
+			        "fato_terremoto.magnitude": {
+			          "Target": {
+			            "Entity": "fato_terremoto.magnitude"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_terremoto"
+			            },
+			            "Object": {
+			              "Role": "fato_terremoto.magnitude"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_terremotos_have_magnitudes"
+			        }
+			      ]
+			    },
+			    "fato_terremoto_has_depth_km": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_terremotos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_terremoto": {
+			          "Target": {
+			            "Entity": "fato_terremoto"
+			          }
+			        },
+			        "fato_terremoto.depth_km": {
+			          "Target": {
+			            "Entity": "fato_terremoto.depth_km"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_terremoto"
+			            },
+			            "Object": {
+			              "Role": "fato_terremoto.depth_km"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_terremotos_have_depth_km"
+			        }
+			      ]
+			    },
+			    "fato_terremoto_has_usgs_id": {
+			      "Binding": {
+			        "ConceptualEntity": "fato_terremotos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fato_terremoto": {
+			          "Target": {
+			            "Entity": "fato_terremoto"
+			          }
+			        },
+			        "fato_terremoto.usgs_id": {
+			          "Target": {
+			            "Entity": "fato_terremoto.usgs_id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fato_terremoto"
+			            },
+			            "Object": {
+			              "Role": "fato_terremoto.usgs_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fato_terremotos_have_usgs_ids"
+			        }
+			      ]
+			    },
+			    "dim_localizacao_in_location_desc": {
+			      "Binding": {
+			        "ConceptualEntity": "dim_localizacao"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_localizacao": {
+			          "Target": {
+			            "Entity": "dim_localizacao"
+			          }
+			        },
+			        "dim_localizacao.location_desc": {
+			          "Target": {
+			            "Entity": "dim_localizacao.location_desc"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "dim_localizacao.location_desc"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "dim_localizacao"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "dim_localizacao.location_desc"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_localizacaos_are_in_location_descs"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
 			}
 		contentType: json
 

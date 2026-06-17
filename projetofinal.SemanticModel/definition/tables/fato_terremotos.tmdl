@@ -10,22 +10,22 @@ table fato_terremotos
 		annotation SummarizationSetBy = Automatic
 
 	column depth_km
-		dataType: int64
+		dataType: double
 		formatString: 0
 		lineageTag: 94f33e7e-9b71-486a-8c85-84df1418b8e2
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: depth_km
 
-		annotation SummarizationSetBy = Automatic
+		annotation SummarizationSetBy = User
 
 	column magnitude
 		dataType: double
 		formatString: 0
 		lineageTag: c8259e5e-70aa-4746-aba3-59f09931bed4
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: magnitude
 
-		annotation SummarizationSetBy = Automatic
+		annotation SummarizationSetBy = User
 
 	column id_status
 		dataType: int64
@@ -67,10 +67,10 @@ table fato_terremotos
 		mode: import
 		source =
 				let
-				    Fonte = Csv.Document(File.Contents("C:\Users\Davi Morais\Documents\CEUB\DDCDD\archive\earthquakes.csv"),[Delimiter=",", Columns=12, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    Fonte = Csv.Document(File.Contents("C:\Users\T-Gamer\Documents\ceub\bi2\projetofinal_bi2\earthquakes.csv"),[Delimiter=",", Columns=12, Encoding=65001, QuoteStyle=QuoteStyle.None]),
 				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
-				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"usgs_id", type text}, {"date", type text}, {"year", Int64.Type}, {"month", Int64.Type}, {"lat", Int64.Type}, {"lon", Int64.Type}, {"depth_km", Int64.Type}, {"magnitude", Int64.Type}, {"mag_type", type text}, {"magnitude_class", type text}, {"location_desc", type text}, {"review_status", type text}}),
-				    #"Tipo Alterado2" = Table.TransformColumnTypes(#"Tipo Alterado",{{"lat", type number}, {"lon", type number}, {"date", type date}}),
+				    #"Tipo Alterado com Localidade" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos", {{"lat", type number}, {"lon", type number}, {"depth_km", type number}, {"magnitude", type number}}, "en-US"),
+				    #"Tipo Alterado2" = Table.TransformColumnTypes(#"Tipo Alterado com Localidade",{{"lat", type number}, {"lon", type number}, {"date", type date}}),
 				    #"Consultas Mescladas" = Table.NestedJoin(#"Tipo Alterado2", {"review_status"}, dim_status_revisao, {"review_status"}, "dim_status_revisao", JoinKind.LeftOuter),
 				    #"dim_status_revisao Expandido" = Table.ExpandTableColumn(#"Consultas Mescladas", "dim_status_revisao", {"id_status"}, {"id_status"}),
 				    #"Consultas Mescladas1" = Table.NestedJoin(#"dim_status_revisao Expandido", {"mag_type", "magnitude_class"}, dim_classificacao, {"mag_type", "magnitude_class"}, "dim_classificacao", JoinKind.LeftOuter),
@@ -80,9 +80,10 @@ table fato_terremotos
 				    #"Consultas Mescladas3" = Table.NestedJoin(#"dim_localizacao Expandido", {"date"}, dim_calendario, {"date"}, "dim_calendario", JoinKind.LeftOuter),
 				    #"dim_calendario Expandido" = Table.ExpandTableColumn(#"Consultas Mescladas3", "dim_calendario", {"id_calendario"}, {"id_calendario"}),
 				    #"Colunas Removidas" = Table.RemoveColumns(#"dim_calendario Expandido",{"date", "year", "month", "lat", "lon", "mag_type", "magnitude_class", "location_desc", "review_status"}),
-				    #"Tipo Alterado1" = Table.TransformColumnTypes(#"Colunas Removidas",{{"magnitude", type number}})
+				    #"Tipo Alterado1" = Table.TransformColumnTypes(#"Colunas Removidas",{{"magnitude", type number}}),
+				    #"Linhas Classificadas" = Table.Sort(#"Tipo Alterado1",{{"magnitude", Order.Descending}, {"depth_km", Order.Descending}})
 				in
-				    #"Tipo Alterado1"
+				    #"Linhas Classificadas"
 
 	annotation PBI_NavigationStepName = Navegação
 

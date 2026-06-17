@@ -1,0 +1,135 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "a6d79a3694a9800c6a4c",
+  "position": {
+    "x": 522.9152542372882,
+    "y": 0,
+    "z": 4000,
+    "height": 486.30508474576271,
+    "width": 749.89830508474574,
+    "tabOrder": 4000
+  },
+  "visual": {
+    "visualType": "map",
+    "query": {
+      "queryState": {
+        "Series": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_status_revisao"
+                    }
+                  },
+                  "Property": "review_status"
+                }
+              },
+              "queryRef": "dim_status_revisao.review_status",
+              "nativeQueryRef": "review_status"
+            }
+          ]
+        },
+        "Size": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "medidas"
+                    }
+                  },
+                  "Property": "magnitude_media"
+                }
+              },
+              "queryRef": "medidas.magnitude_media",
+              "nativeQueryRef": "magnitude_media"
+            }
+          ]
+        },
+        "X": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_localizacao"
+                    }
+                  },
+                  "Property": "lon"
+                }
+              },
+              "queryRef": "dim_localizacao.lon",
+              "nativeQueryRef": "lon"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "dim_localizacao"
+                    }
+                  },
+                  "Property": "lat"
+                }
+              },
+              "queryRef": "dim_localizacao.lat",
+              "nativeQueryRef": "lat"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "legend": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

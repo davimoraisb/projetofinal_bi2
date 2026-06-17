@@ -30,7 +30,7 @@ table dim_classificacao
 		mode: import
 		source =
 				let
-				    Fonte = Csv.Document(File.Contents("C:\Users\Davi Morais\Documents\CEUB\DDCDD\archive\earthquakes.csv"),[Delimiter=",", Columns=12, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    Fonte = Csv.Document(File.Contents("C:\Users\T-Gamer\Documents\ceub\bi2\projetofinal_bi2\earthquakes.csv"),[Delimiter=",", Columns=12, Encoding=65001, QuoteStyle=QuoteStyle.None]),
 				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
 				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"usgs_id", type text}, {"date", type text}, {"year", Int64.Type}, {"month", Int64.Type}, {"lat", Int64.Type}, {"lon", Int64.Type}, {"depth_km", Int64.Type}, {"magnitude", Int64.Type}, {"mag_type", type text}, {"magnitude_class", type text}, {"location_desc", type text}, {"review_status", type text}}),
 				    #"Colunas Removidas" = Table.RemoveColumns(#"Tipo Alterado",{"location_desc", "review_status", "date", "year", "month", "lat", "lon", "depth_km", "magnitude", "usgs_id"}),

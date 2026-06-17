@@ -22,7 +22,7 @@ ref table LocalDateTable_36e26c1e-eb98-4955-ae99-57827a8cd951
 ref table medidas
 
 ref role analista_comercial_norte
-ref role defesa_civil_alerta
+ref role analista_comercial_sul
 
 ref cultureInfo pt-BR
 

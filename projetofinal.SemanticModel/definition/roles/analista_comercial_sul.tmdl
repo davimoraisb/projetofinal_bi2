@@ -1,0 +1,7 @@
+role analista_comercial_sul
+	modelPermission: read
+
+	tablePermission dim_localizacao = [lat] <= 0
+
+	annotation PBI_Id = 6b4f6a19ac9847b28923bdf32815a888
+

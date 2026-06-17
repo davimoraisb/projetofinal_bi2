@@ -21,19 +21,19 @@ table dim_calendario
 		dataType: int64
 		formatString: 0
 		lineageTag: ea26cd66-0098-4a3c-84cd-146782c7c242
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: year
 
-		annotation SummarizationSetBy = Automatic
+		annotation SummarizationSetBy = User
 
 	column month
 		dataType: int64
 		formatString: 0
 		lineageTag: 329f0263-a1c0-4954-8e7d-6608b5b1e2e1
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: month
 
-		annotation SummarizationSetBy = Automatic
+		annotation SummarizationSetBy = User
 
 	column id_calendario
 		dataType: int64
@@ -48,16 +48,17 @@ table dim_calendario
 		mode: import
 		source =
 				let
-				    Fonte = Csv.Document(File.Contents("C:\Users\Davi Morais\Documents\CEUB\DDCDD\archive\earthquakes.csv"),[Delimiter=",", Columns=12, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    Fonte = Csv.Document(File.Contents("C:\Users\T-Gamer\Documents\ceub\bi2\projetofinal_bi2\earthquakes.csv"),[Delimiter=",", Columns=12, Encoding=65001, QuoteStyle=QuoteStyle.None]),
 				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
-				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"usgs_id", type text}, {"date", type text}, {"year", Int64.Type}, {"month", Int64.Type}, {"lat", Int64.Type}, {"lon", Int64.Type}, {"depth_km", Int64.Type}, {"magnitude", Int64.Type}, {"mag_type", type text}, {"magnitude_class", type text}, {"location_desc", type text}, {"review_status", type text}}),
+				    #"Tipo Alterado1" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"date", type date}}),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Tipo Alterado1",{{"usgs_id", type text}, {"date", type text}, {"year", Int64.Type}, {"month", Int64.Type}, {"lat", Int64.Type}, {"lon", Int64.Type}, {"depth_km", Int64.Type}, {"magnitude", Int64.Type}, {"mag_type", type text}, {"magnitude_class", type text}, {"location_desc", type text}, {"review_status", type text}}),
 				    #"Colunas Removidas" = Table.RemoveColumns(#"Tipo Alterado",{"usgs_id", "lat", "lon", "depth_km", "magnitude", "mag_type", "magnitude_class", "location_desc", "review_status"}),
-				    #"Duplicatas Removidas" = Table.Distinct(#"Colunas Removidas", {"date"}),
+				    #"Tipo Alterado2" = Table.TransformColumnTypes(#"Colunas Removidas",{{"date", type date}}),
+				    #"Duplicatas Removidas" = Table.Distinct(#"Tipo Alterado2", {"date"}),
 				    #"Índice Adicionado" = Table.AddIndexColumn(#"Duplicatas Removidas", "Índice", 1, 4, Int64.Type),
-				    #"Colunas Renomeadas" = Table.RenameColumns(#"Índice Adicionado",{{"Índice", "id_calendario"}}),
-				    #"Tipo Alterado1" = Table.TransformColumnTypes(#"Colunas Renomeadas",{{"date", type date}})
+				    #"Colunas Renomeadas" = Table.RenameColumns(#"Índice Adicionado",{{"Índice", "id_calendario"}})
 				in
-				    #"Tipo Alterado1"
+				    #"Colunas Renomeadas"
 
 	annotation PBI_NavigationStepName = Navegação
 

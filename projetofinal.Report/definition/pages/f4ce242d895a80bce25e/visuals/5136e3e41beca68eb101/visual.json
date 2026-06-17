@@ -1,0 +1,823 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "5136e3e41beca68eb101",
+  "position": {
+    "x": 970.16949152542372,
+    "y": 463.11864406779665,
+    "z": 3000,
+    "height": 226.98305084745763,
+    "width": 289.83050847457628,
+    "tabOrder": 3000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "O sismo de ID ",
+                    "textStyle": {
+                      "color": "#ffffff"
+                    }
+                  },
+                  {
+                    "value": {
+                      "propertyIdentifier": {
+                        "objectName": "values",
+                        "propertyName": "expr"
+                      },
+                      "selector": {
+                        "id": "Valor"
+                      }
+                    },
+                    "textStyle": {
+                      "color": "#ffffff"
+                    }
+                  },
+                  {
+                    "value": " ocorreu na região de ",
+                    "textStyle": {
+                      "color": "#ffffff"
+                    }
+                  },
+                  {
+                    "value": {
+                      "propertyIdentifier": {
+                        "objectName": "values",
+                        "propertyName": "expr"
+                      },
+                      "selector": {
+                        "id": "Valor 2"
+                      }
+                    },
+                    "textStyle": {
+                      "color": "#ffffff"
+                    }
+                  },
+                  {
+                    "value": " no dia ",
+                    "textStyle": {
+                      "color": "#ffffff"
+                    }
+                  },
+                  {
+                    "value": {
+                      "propertyIdentifier": {
+                        "objectName": "values",
+                        "propertyName": "expr"
+                      },
+                      "selector": {
+                        "id": "Valor 3"
+                      }
+                    },
+                    "textStyle": {
+                      "color": "#ffffff"
+                    }
+                  },
+                  {
+                    "value": ". Foi classificado como ",
+                    "textStyle": {
+                      "color": "#ffffff"
+                    }
+                  },
+                  {
+                    "value": {
+                      "propertyIdentifier": {
+                        "objectName": "values",
+                        "propertyName": "expr"
+                      },
+                      "selector": {
+                        "id": "Valor 4"
+                      }
+                    },
+                    "textStyle": {
+                      "color": "#ffffff"
+                    }
+                  },
+                  {
+                    "value": ", atingindo magnitude ",
+                    "textStyle": {
+                      "color": "#ffffff"
+                    }
+                  },
+                  {
+                    "value": {
+                      "propertyIdentifier": {
+                        "objectName": "values",
+                        "propertyName": "expr"
+                      },
+                      "selector": {
+                        "id": "Valor 7"
+                      }
+                    },
+                    "textStyle": {
+                      "color": "#ffffff"
+                    }
+                  },
+                  {
+                    "value": " na escala Richter e profundidade de ",
+                    "textStyle": {
+                      "color": "#ffffff"
+                    }
+                  },
+                  {
+                    "value": {
+                      "propertyIdentifier": {
+                        "objectName": "values",
+                        "propertyName": "expr"
+                      },
+                      "selector": {
+                        "id": "Valor 8"
+                      }
+                    },
+                    "textStyle": {
+                      "color": "#ffffff"
+                    }
+                  },
+                  {
+                    "value": " km.",
+                    "textStyle": {
+                      "color": "#ffffff"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "values": [
+        {
+          "properties": {
+            "expr": {
+              "expr": {
+                "Min": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "Subquery": {
+                          "Query": {
+                            "Version": 2,
+                            "From": [
+                              {
+                                "Name": "f",
+                                "Entity": "fato_terremotos",
+                                "Type": 0
+                              }
+                            ],
+                            "Select": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "f"
+                                    }
+                                  },
+                                  "Property": "usgs_id"
+                                },
+                                "Name": "fato_terremotos.usgs_id"
+                              }
+                            ],
+                            "OrderBy": [
+                              {
+                                "Direction": 1,
+                                "Expression": {
+                                  "Column": {
+                                    "Expression": {
+                                      "SourceRef": {
+                                        "Source": "f"
+                                      }
+                                    },
+                                    "Property": "usgs_id"
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "Property": "fato_terremotos.usgs_id"
+                    }
+                  },
+                  "IncludeAllTypes": 1
+                },
+                "Annotations": {
+                  "NaturalLanguage": {
+                    "version": 1,
+                    "kind": "NaturalLanguage",
+                    "annotation": {
+                      "name": "Valor",
+                      "utterance": "usgs id"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "Valor"
+          }
+        },
+        {
+          "properties": {
+            "expr": {
+              "expr": {
+                "Min": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "Subquery": {
+                          "Query": {
+                            "Version": 2,
+                            "From": [
+                              {
+                                "Name": "d",
+                                "Entity": "dim_localizacao",
+                                "Type": 0
+                              }
+                            ],
+                            "Select": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "d"
+                                    }
+                                  },
+                                  "Property": "location_desc"
+                                },
+                                "Name": "dim_localizacao.location_desc"
+                              }
+                            ],
+                            "OrderBy": [
+                              {
+                                "Direction": 1,
+                                "Expression": {
+                                  "Column": {
+                                    "Expression": {
+                                      "SourceRef": {
+                                        "Source": "d"
+                                      }
+                                    },
+                                    "Property": "location_desc"
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "Property": "dim_localizacao.location_desc"
+                    }
+                  },
+                  "IncludeAllTypes": 1
+                },
+                "Annotations": {
+                  "NaturalLanguage": {
+                    "version": 1,
+                    "kind": "NaturalLanguage",
+                    "annotation": {
+                      "name": "Valor 2",
+                      "utterance": "location desc"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "Valor 2"
+          }
+        },
+        {
+          "properties": {
+            "expr": {
+              "expr": {
+                "Min": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "Subquery": {
+                          "Query": {
+                            "Version": 2,
+                            "From": [
+                              {
+                                "Name": "d",
+                                "Entity": "dim_calendario",
+                                "Type": 0
+                              }
+                            ],
+                            "Select": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "d"
+                                    }
+                                  },
+                                  "Property": "date"
+                                },
+                                "Name": "dim_calendario.date"
+                              }
+                            ],
+                            "OrderBy": [
+                              {
+                                "Direction": 1,
+                                "Expression": {
+                                  "Column": {
+                                    "Expression": {
+                                      "SourceRef": {
+                                        "Source": "d"
+                                      }
+                                    },
+                                    "Property": "date"
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "Property": "dim_calendario.date"
+                    }
+                  },
+                  "IncludeAllTypes": 1
+                },
+                "Annotations": {
+                  "NaturalLanguage": {
+                    "version": 1,
+                    "kind": "NaturalLanguage",
+                    "annotation": {
+                      "name": "Valor 3",
+                      "utterance": "date"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "Valor 3"
+          }
+        },
+        {
+          "properties": {
+            "expr": {
+              "expr": {
+                "Min": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "Subquery": {
+                          "Query": {
+                            "Version": 2,
+                            "From": [
+                              {
+                                "Name": "d",
+                                "Entity": "dim_classificacao",
+                                "Type": 0
+                              }
+                            ],
+                            "Select": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "d"
+                                    }
+                                  },
+                                  "Property": "magnitude_class"
+                                },
+                                "Name": "dim_classificacao.magnitude_class"
+                              }
+                            ],
+                            "OrderBy": [
+                              {
+                                "Direction": 1,
+                                "Expression": {
+                                  "Column": {
+                                    "Expression": {
+                                      "SourceRef": {
+                                        "Source": "d"
+                                      }
+                                    },
+                                    "Property": "magnitude_class"
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "Property": "dim_classificacao.magnitude_class"
+                    }
+                  },
+                  "IncludeAllTypes": 1
+                },
+                "Annotations": {
+                  "NaturalLanguage": {
+                    "version": 1,
+                    "kind": "NaturalLanguage",
+                    "annotation": {
+                      "name": "Valor 4",
+                      "utterance": "magnitude class"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "Valor 4"
+          }
+        },
+        {
+          "properties": {
+            "expr": {
+              "expr": {
+                "Min": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "Subquery": {
+                          "Query": {
+                            "Version": 2,
+                            "From": [
+                              {
+                                "Name": "f",
+                                "Entity": "fato_terremotos",
+                                "Type": 0
+                              }
+                            ],
+                            "Select": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "f"
+                                    }
+                                  },
+                                  "Property": "magnitude"
+                                },
+                                "Name": "fato_terremotos.magnitude"
+                              }
+                            ],
+                            "OrderBy": [
+                              {
+                                "Direction": 1,
+                                "Expression": {
+                                  "Column": {
+                                    "Expression": {
+                                      "SourceRef": {
+                                        "Source": "f"
+                                      }
+                                    },
+                                    "Property": "magnitude"
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "Property": "fato_terremotos.magnitude"
+                    }
+                  },
+                  "IncludeAllTypes": 1
+                },
+                "Annotations": {
+                  "NaturalLanguage": {
+                    "version": 1,
+                    "kind": "NaturalLanguage",
+                    "annotation": {
+                      "name": "Valor 5",
+                      "utterance": "magnitude"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "Valor 5"
+          }
+        },
+        {
+          "properties": {
+            "expr": {
+              "expr": {
+                "Min": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "Subquery": {
+                          "Query": {
+                            "Version": 2,
+                            "From": [
+                              {
+                                "Name": "f",
+                                "Entity": "fato_terremotos",
+                                "Type": 0
+                              }
+                            ],
+                            "Select": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "f"
+                                    }
+                                  },
+                                  "Property": "magnitude"
+                                },
+                                "Name": "fato_terremotos.magnitude"
+                              }
+                            ],
+                            "OrderBy": [
+                              {
+                                "Direction": 1,
+                                "Expression": {
+                                  "Column": {
+                                    "Expression": {
+                                      "SourceRef": {
+                                        "Source": "f"
+                                      }
+                                    },
+                                    "Property": "magnitude"
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "Property": "fato_terremotos.magnitude"
+                    }
+                  },
+                  "IncludeAllTypes": 1
+                },
+                "Annotations": {
+                  "NaturalLanguage": {
+                    "version": 1,
+                    "kind": "NaturalLanguage",
+                    "annotation": {
+                      "name": "Valor 6",
+                      "utterance": "magnitude"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "Valor 6"
+          }
+        },
+        {
+          "properties": {
+            "expr": {
+              "expr": {
+                "Min": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "Subquery": {
+                          "Query": {
+                            "Version": 2,
+                            "From": [
+                              {
+                                "Name": "f",
+                                "Entity": "fato_terremotos",
+                                "Type": 0
+                              }
+                            ],
+                            "Select": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "f"
+                                    }
+                                  },
+                                  "Property": "magnitude"
+                                },
+                                "Name": "fato_terremotos.magnitude"
+                              }
+                            ],
+                            "OrderBy": [
+                              {
+                                "Direction": 1,
+                                "Expression": {
+                                  "Column": {
+                                    "Expression": {
+                                      "SourceRef": {
+                                        "Source": "f"
+                                      }
+                                    },
+                                    "Property": "magnitude"
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "Property": "fato_terremotos.magnitude"
+                    }
+                  },
+                  "IncludeAllTypes": 1
+                },
+                "Annotations": {
+                  "NaturalLanguage": {
+                    "version": 1,
+                    "kind": "NaturalLanguage",
+                    "annotation": {
+                      "name": "Valor 7",
+                      "utterance": "magnitude"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "Valor 7"
+          }
+        },
+        {
+          "properties": {
+            "expr": {
+              "expr": {
+                "Min": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "Subquery": {
+                          "Query": {
+                            "Version": 2,
+                            "From": [
+                              {
+                                "Name": "f",
+                                "Entity": "fato_terremotos",
+                                "Type": 0
+                              }
+                            ],
+                            "Select": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "f"
+                                    }
+                                  },
+                                  "Property": "depth_km"
+                                },
+                                "Name": "fato_terremotos.depth_km"
+                              }
+                            ],
+                            "OrderBy": [
+                              {
+                                "Direction": 1,
+                                "Expression": {
+                                  "Column": {
+                                    "Expression": {
+                                      "SourceRef": {
+                                        "Source": "f"
+                                      }
+                                    },
+                                    "Property": "depth_km"
+                                  }
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "Property": "fato_terremotos.depth_km"
+                    }
+                  },
+                  "IncludeAllTypes": 1
+                },
+                "Annotations": {
+                  "NaturalLanguage": {
+                    "version": 1,
+                    "kind": "NaturalLanguage",
+                    "annotation": {
+                      "name": "Valor 8",
+                      "utterance": "depth km"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "Valor 8"
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dropShadow": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'left'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

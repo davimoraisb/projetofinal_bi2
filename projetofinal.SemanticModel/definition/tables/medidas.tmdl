@@ -33,7 +33,13 @@ table medidas
 		formatString: 0
 		lineageTag: c5dae5eb-5acf-4f38-b75d-473431283f60
 
-	measure qtd_terremotos_ano_anterior = CALCULATE([qtd_total_terremotos], SAMEPERIODLASTYEAR(dim_calendario[date]))
+	measure qtd_terremotos_ano_anterior = ```
+			
+			CALCULATE(
+			    [qtd_total_terremotos], 
+			    DATEADD(dim_calendario[date], -1, YEAR)
+			)
+			```
 		formatString: 0
 		lineageTag: 37deaa1d-798d-40b7-9db2-d4048eb5a79b
 

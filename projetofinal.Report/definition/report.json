@@ -39,6 +39,9 @@
       }
     ]
   },
+  "publicCustomVisuals": [
+    "advancedGauge97290A2225EA4EB5BC5C8D85F9ACA7DA"
+  ],
   "resourcePackages": [
     {
       "name": "SharedResources",
@@ -50,6 +53,27 @@
           "type": "BaseTheme"
         }
       ]
+    },
+    {
+      "name": "RegisteredResources",
+      "type": "RegisteredResources",
+      "items": [
+        {
+          "name": "canvas_template_glass_1920x1082977342073601261.png",
+          "path": "canvas_template_glass_1920x1082977342073601261.png",
+          "type": "Image"
+        },
+        {
+          "name": "canvas_template_page1_glass_1917930397832255762.png",
+          "path": "canvas_template_page1_glass_1917930397832255762.png",
+          "type": "Image"
+        },
+        {
+          "name": "canvas_template_page2_glass_195292059523212422.png",
+          "path": "canvas_template_page2_glass_195292059523212422.png",
+          "type": "Image"
+        }
+      ]
     }
   ],
   "settings": {
@@ -58,6 +82,9 @@
     "defaultDrillFilterOtherVisuals": true,
     "allowChangeFilterTypes": true,
     "useEnhancedTooltips": false,
-    "useDefaultAggregateDisplayName": true
+    "useDefaultAggregateDisplayName": true,
+    "queryLimitOption": "None",
+    "customMemoryLimit": "1048576",
+    "customTimeoutLimit": "225"
   }
 }

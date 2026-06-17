@@ -5,6 +5,7 @@ table dim_localizacao
 		dataType: double
 		formatString: 0
 		lineageTag: e203c683-6ff0-4335-b6a5-e5460b2a7772
+		dataCategory: Latitude
 		summarizeBy: none
 		sourceColumn: lat
 
@@ -14,6 +15,7 @@ table dim_localizacao
 		dataType: double
 		formatString: 0
 		lineageTag: d68d694d-f57b-4a67-9c2b-a051fcb7d984
+		dataCategory: Longitude
 		summarizeBy: none
 		sourceColumn: lon
 
@@ -46,17 +48,16 @@ table dim_localizacao
 		mode: import
 		source =
 				let
-				    Fonte = Csv.Document(File.Contents("C:\Users\Davi Morais\Documents\CEUB\DDCDD\archive\earthquakes.csv"),[Delimiter=",", Columns=12, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    Fonte = Csv.Document(File.Contents("C:\Users\T-Gamer\Documents\ceub\bi2\projetofinal_bi2\earthquakes.csv"),[Delimiter=",", Columns=12, Encoding=65001, QuoteStyle=QuoteStyle.None]),
 				    #"Cabeçalhos Promovidos" = Table.PromoteHeaders(Fonte, [PromoteAllScalars=true]),
-				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos",{{"usgs_id", type text}, {"date", type text}, {"year", Int64.Type}, {"month", Int64.Type}, {"lat", Int64.Type}, {"lon", Int64.Type}, {"depth_km", Int64.Type}, {"magnitude", Int64.Type}, {"mag_type", type text}, {"magnitude_class", type text}, {"location_desc", type text}, {"review_status", type text}}),
-				    #"Colunas Removidas" = Table.RemoveColumns(#"Tipo Alterado",{"usgs_id", "date", "year", "month", "depth_km", "review_status", "magnitude_class", "mag_type"}),
+				    #"Tipo Alterado com Localidade" = Table.TransformColumnTypes(#"Cabeçalhos Promovidos", {{"lat", type number}, {"lon", type number}}, "en-US"),
+				    #"Colunas Removidas" = Table.RemoveColumns(#"Tipo Alterado com Localidade",{"usgs_id", "date", "year", "month", "depth_km", "review_status", "magnitude_class", "mag_type"}),
 				    #"Colunas Removidas1" = Table.RemoveColumns(#"Colunas Removidas",{"magnitude"}),
 				    #"Duplicatas Removidas" = Table.Distinct(#"Colunas Removidas1", {"location_desc", "lon", "lat"}),
 				    #"Índice Adicionado" = Table.AddIndexColumn(#"Duplicatas Removidas", "Índice", 1, 1, Int64.Type),
-				    #"Colunas Renomeadas" = Table.RenameColumns(#"Índice Adicionado",{{"Índice", "id_loc"}}),
-				    #"Tipo Alterado1" = Table.TransformColumnTypes(#"Colunas Renomeadas",{{"lat", type number}, {"lon", type number}})
+				    #"Colunas Renomeadas" = Table.RenameColumns(#"Índice Adicionado",{{"Índice", "id_loc"}})
 				in
-				    #"Tipo Alterado1"
+				    #"Colunas Renomeadas"
 
 	annotation PBI_NavigationStepName = Navegação
 
